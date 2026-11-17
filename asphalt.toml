@@ -1,0 +1,22 @@
+#:schema https://raw.githubusercontent.com/jackTabsCode/asphalt/refs/heads/main/schema.json
+
+# Files in assets/ upload to Roblox under the creator below, using the Open Cloud key
+# in ASPHALT_API_KEY (from your environment or the gitignored .env file).
+# Run through tools/assets.cmd or tools/assets.sh, never with the key on the command line.
+#
+# Set the creator before the first upload:
+#   type = "group", id = your group (community) ID   (recommended: assets belong to the group)
+#   type = "user",  id = your user ID
+[creator]
+type = "group"
+id = 0
+
+[codegen]
+style = "nested"
+strip_extensions = true
+
+# Writes src/shared/assets.luau (named after the input):
+# assets/ui/close.png -> require(ReplicatedStorage.Shared.assets).ui.close
+[inputs.assets]
+path = "assets/**/*"
+output_path = "src/shared"

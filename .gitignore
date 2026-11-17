@@ -1,0 +1,31 @@
+# Working place file (world content built in Studio lives here)
+/place.rbxlx
+
+# Roblox Studio lock files
+/*.rbxlx.lock
+/*.rbxl.lock
+
+# Throwaway build for checking the project
+/check.rbxl
+
+sourcemap.json
+
+# Asphalt's local debug target
+/.asphalt-debug/
+
+# Wally packages (`wally install` recreates them from wally.lock)
+/Packages/
+/ServerPackages/
+/DevPackages/
+
+# Roblox type definitions downloaded by tools\check.cmd
+/.luau-lsp/
+
+# Raw downloads (asset packs before picking files into assets/)
+/downloads/
+
+# Per-user Claude Code settings
+.claude/settings.local.json
+
+# Local secrets (Open Cloud key); copy .env.example to .env
+.env

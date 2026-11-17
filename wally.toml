@@ -1,0 +1,28 @@
+# Packages from the Wally index (https://wally.run). `wally install` puts them
+# in Packages/ and ServerPackages/ (gitignored), which Rojo maps to
+# ReplicatedStorage.Packages and ServerScriptService.ServerPackages.
+# Require them as require(ReplicatedStorage.Packages.Trove) and so on.
+[package]
+name = "your-name/your-game"
+version = "0.1.0"
+registry = "https://github.com/UpliftGames/wally-index"
+realm = "shared"
+private = true
+
+[place]
+shared-packages = "game.ReplicatedStorage.Packages"
+server-packages = "game.ServerScriptService.ServerPackages"
+
+# Maintained picks as of 2026-11 (see docs/workflows.md). Uncomment what the
+# game needs, then run `wally install`.
+[dependencies]
+# Trove = "sleitnick/trove@1.8.0"         # cleanup of connections and instances
+# Signal = "sleitnick/signal@2.0.3"       # typed events
+# Promise = "evaera/promise@4.0.0"        # async
+# React = "roblox/react@17.3.13"          # UI (with ReactRoblox)
+# ReactRoblox = "roblox/react-roblox@17.3.13"
+
+[server-dependencies]
+# ProfileStore = "lm-loleris/profilestore@1.0.3"   # player data with session locking
+
+[dev-dependencies]
